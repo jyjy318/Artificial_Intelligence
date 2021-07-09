@@ -57,8 +57,6 @@ Augmentation를 수행한 후 Train Accuracy와 Validation Accuracy는 각각 �
 9. Test 에서의 적용 <br/> 
   : 학습을 통해 생성된 model을 test코드에 넣어서 확인해보는 과정입니다. Model에 있는 가중치값을 모두 사용하기 위해 cnn model 생성 내용을 모두 가져오고, model을 탑재하여 test하게 됩니다. Test 데이터는 총 90개가 있고 0은 normal, 1은 fracture로 추론 결과가 나오게 됩니다. 저는 이 부분을 csv로 바로 저장하기 위해 각각의 값들을 list에서 numpy로, numpy에서 dataframe으로 변환하여 csv에 자동으로 저장할 수 있도록 코드를 수정하였습니다. 생성된 csv의 1열에는 test파일의 이름이, 2열에는 추론된 결과가 0과 1의 label로 저장되어있음을 확인할 수 있습니다. <br/>
   
-10. Term Project를 통하여 느낀점 <br/> 
-  : 한학기동안 패턴인식과 머신러닝 이라는 과목에서 배운 이론적인 내용들을 실제 CNN모델에 탑재해보고, 직접 파라미터들을 수정해나가면서 최적의 결과를 도출하기 위해 layer등을 추가해보며 각각의 과정이 결과에 어떤 결과를 미치는지 직접 확인해볼 수 있었습니다. 
 
 
 
